@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-background-color: #F2EFE7;
+    --primary-navbar-background-color: #6EACDA;
+    --primary-link-colour: #F6F4F0;
+    --primary-link-hover-color: #021526;
+    --h3-color: #021526;
+    --placeholder-color: #021526;
+    --color: 0, 0, 0;
+    --shadow-color: 5px 5px 5px 0px rgba(var(--color), 0.3);
+    --toogler-button-background-color: #EEEEEE;
+    --toogler-button-color: #EEEEEE;
+    --card-header-css: #F6F4F0;
+    --card-body-css: #F2EFE7;
+    --card-footer-css: #F6F4F0;
+    --card-css: #F6F4F0;
+    --card-color: #021526;
+    --input-background-color: #EEEEEE;
+    --input-color: #021526;
+    --list-item-background-color: #EEEEEE;
+    --list-item-color: #021526;
+    --list-item-border-color: #6EACDA;
+}
+
+[data-theme="dark"] {
+    --primary-background-color: #31363F;
+    --primary-navbar-background-color: #222831;
+    --primary-link-colour: #76ABAE;
+    --primary-link-hover-color: #EEEEEE;
+    --h3-color: #EEEEEE;
+    --placeholder-color: #EEEEEE;
+    --color: 255, 255, 255;
+    --shadow-color: 5px 5px 5px 0px rgba(var(--color), 0.3);
+    --toogler-button-background-color: #76ABAE;
+    --toogler-button-color: #76ABAE;
+    --card-header-css: #222831;
+    --card-body-css: #31363F;
+    --card-footer-css: #222831;
+    --card-css: #76ABAE;
+    --card-color: #EEEEEE;
+    --input-background-color: #222831;
+    --input-color: #EEEEEE;
+    --list-item-background-color: #222831;
+    --list-item-color: #EEEEEE;
+    --list-item-border-color: #76ABAE;
+}
+
+[data-theme="light"] {
+    --primary-background-color: #F2EFE7;
+    --primary-navbar-background-color: #6EACDA;
+    --primary-link-colour: #F6F4F0;
+    --primary-link-hover-color: #021526;
+    --h3-color: #021526;
+    --placeholder-color: #021526;
+    --color: 0, 0, 0;
+    --shadow-color: 5px 5px 5px 0px rgba(var(--color), 0.3);
+    --toogler-button-background-color: #F6F4F0;
+    --toogler-button-color: #F6F4F0;
+    --card-header-css: #F6F4F0;
+    --card-body-css: #F2EFE7;
+    --card-footer-css: #F6F4F0;
+    --card-css: #6EACDA;
+    --card-color: #021526;
+    --input-background-color: #F6F4F0;
+    --input-color: #021526;
+    --list-item-background-color: #F6F4F0;
+    --list-item-color: #021526;
+    --list-item-border-color: #6EACDA;
+
+}
+
+
+body {
+    background-color: var(--primary-background-color);
+}
+
+.navbar-container {
+
+    width: 100%;
+    background-color: var(--primary-navbar-background-color);
+
+}
+
+.link {
+    font-size: 2rem;
+    color: var(--primary-link-colour);
+    text-decoration: none;
+    margin: 1rem
+}
+
+.link:hover {
+    color: var(--primary-link-hover-color);
+}
+
+.card {
+    box-shadow: var(--shadow-color);
+}
+
+.btn-blue {
+    background-color: var(--primary-navbar-background-color);
+    color: var(--primary-link-colour);
+}
+
+
+.btn-blue:hover {
+    background-color: var(--primary-link-hover-color);
+    color: var(--primary-link-colour);
+}
+
+.input {
+    background-color: var(--input-background-color);
+    color: var(--input-color);
+    border: 0.5px solid var(--list-item-border-color);
+}
+
+.input::placeholder {
+    opacity: 0.4;
+    color: var(--placeholder-color)
+}
+
+.input:focus {
+    background-color: var(--input-background-color);
+    color: var(--input-color);
+}
+
+.h3-css {
+    color: var(--h3-color);
+}
+
+.toggler-button {
+    background-color: var(--toogler-button-background-color);
+    color: var(--toogler-button-color);
+
+}
+
+.card-body-css {
+    background-color: var(--card-body-css);
+    color: var(--card-color);
+
+}
+
+.card-header-css {
+    background-color: var(--card-header-css);
+    color: var(--card-color)
+}
+
+.card-footer-css {
+    background-color: var(--card-footer-css);
+    color: var(--card-color);
+
+}
+
+.card-css {
+    border: 1px solid var(--card-css)
+}
+
+.list-item {
+    background-color: var(--list-item-background-color);
+    color: var(--list-item-color);
+    border: 1px solid var(--list-item-border-color);
+}
