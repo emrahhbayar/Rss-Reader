@@ -163,3 +163,32 @@ body {
     color: var(--list-item-color);
     border: 1px solid var(--list-item-border-color);
 }
+
+.collapse {
+    transition: height 0.6s ease-in-out;
+    overflow: hidden;
+}
+
+.collapse.show {
+    display: block !important;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.modal-header,
+.modal-footer {
+    background-color: var(--primary-navbar-background-color) !important;
+    color: var(--list-item-color) !important;
+}
+
+.modal-body {
+    background-color: var(--primary-background-color) !important;
+    color: var(--list-item-color) !important;
+}
+
+.modal-dialog {
+    border: 1px solid var(--list-item-border-color);
+    border-radius: 5px;
+}

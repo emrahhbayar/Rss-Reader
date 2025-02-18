@@ -21,6 +21,15 @@ function Navbar() {
         setTheme(theme === 'dark' ? 'light' : 'dark')
 
     }
+    function closeMenuOnLinkClick() {
+
+        setTimeout(() => {
+            const navbarCollapse = document.getElementById("navbarNav");
+            if (navbarCollapse) {
+                navbarCollapse.classList.remove("show");
+            }
+        }, 300);
+    };
 
     useEffect(() => {
         document.querySelector('body').setAttribute('data-theme', theme);
@@ -39,10 +48,10 @@ function Navbar() {
                     <div className="d-flex justify-content-center flex-grow-2">
                         <ul className="navbar-nav my-3">
                             <li className="nav-item">
-                                <Link className='link' to='/'>{t('My RSS')}</Link>
+                                <Link onClick={closeMenuOnLinkClick} className='link' to='/'>{t('My RSS')}</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className='link' to='/addRssLinks'>{t('Add RSS Links')}</Link>
+                                <Link onClick={closeMenuOnLinkClick} className='link' to='/addRssLinks'>{t('Add RSS Links')}</Link>
                             </li>
                         </ul>
 
