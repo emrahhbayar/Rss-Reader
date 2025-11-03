@@ -188,7 +188,17 @@ body {
     color: var(--list-item-color) !important;
 }
 
-.modal-dialog {
+.modal-content {
     border: 1px solid var(--list-item-border-color);
-    border-radius: 5px;
+}
+
+.custom-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1040;
 }

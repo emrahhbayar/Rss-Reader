@@ -11,11 +11,14 @@ function MyRSS() {
     const [disabled, setDisabled] = useState("");
 
     const [data, setData] = useState([]);
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const locale = i18n.language === "tr-TR" ? "tr" : "eng";
+    console.log(locale);
+    const baseURL = import.meta.env.VITE_REACT_APP_API_URL;
 
     async function getRSSfeed(RSSLinks) {
         setDisabled("disabled");
-        const response = await axios.get(`${import.meta.env.VITE_REACT_APP_API_URL}${RSSLinks}`);
+        const response = await axios.get(`${baseURL}locale=${locale}&urls=${RSSLinks}`);
         setData(response.data);
         setDisabled("");
 
@@ -24,7 +27,7 @@ function MyRSS() {
     const rssLinks = rssList.join(',');
     useEffect(() => {
         getRSSfeed(rssLinks)
-    }, [])
+    }, [locale])
 
     return (
         <div className='container'>

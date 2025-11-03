@@ -16,3 +16,4 @@ Uygulama Rss beslemelerini takip etmek üzere oluşturulmuştur. İstediğiniz r
 <img width="1420" height="772" alt="4" src="https://github.com/user-attachments/assets/3237829d-6e85-42fd-8a04-e79a822ba29d" />
 <img width="1420" height="772" alt="5" src="https://github.com/user-attachments/assets/57997ee1-2d38-4380-852f-94ae89364cef" />
 <img width="1420" height="772" alt="6" src="https://github.com/user-attachments/assets/69fc5b31-e668-4777-93dd-fa407d5f0df3" />
+

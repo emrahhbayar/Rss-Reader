@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+const defaultImage = "/images/default-image.webp";
 
 function RSSFeed({ feed }) {
 
@@ -11,6 +12,7 @@ function RSSFeed({ feed }) {
                     {feed.source}
                 </div>
                 <div className="card-body card-body-css">
+                    <img className="m-2 rounded" src={feed.image || defaultImage} width="200" height="150"></img>
                     <h5 className="card-title">{feed.title}</h5>
                     <a target='_blank' href={feed.link} className="btn btn-blue">{t('Go to link')}</a>
                 </div>
@@ -18,7 +20,7 @@ function RSSFeed({ feed }) {
                     {feed.timeDifference}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
