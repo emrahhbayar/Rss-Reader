@@ -13,7 +13,6 @@ function MyRSS() {
     const [data, setData] = useState([]);
     const { t, i18n } = useTranslation();
     const locale = i18n.language === "tr-TR" ? "tr" : "eng";
-    console.log(locale);
     const baseURL = import.meta.env.VITE_REACT_APP_API_URL;
 
     async function getRSSfeed(RSSLinks) {

@@ -11,8 +11,8 @@ function RSSFeed({ feed }) {
                 <div className="card-header card-header-css">
                     {feed.source}
                 </div>
+                <img className="m-1 rounded" src={feed.image || defaultImage} height="180px"></img>
                 <div className="card-body card-body-css">
-                    <img className="m-2 rounded" src={feed.image || defaultImage} width="200" height="150"></img>
                     <h5 className="card-title">{feed.title}</h5>
                     <a target='_blank' href={feed.link} className="btn btn-blue">{t('Go to link')}</a>
                 </div>
