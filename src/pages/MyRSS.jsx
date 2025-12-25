@@ -27,20 +27,23 @@ function MyRSS() {
         }
         setDisabled("");
     }
+    function handleCloseModal() {
+        setShowAlert(false);
+    }
 
     const rssLinks = rssList.join(',');
     useEffect(() => {
-
         getRSSfeed(rssLinks)
     }, [locale]);
 
     useEffect(() => {
+        let timer;
         if (showAlert) {
-            setTimeout(() => {
+            timer = setTimeout(() => {
                 setShowAlert(false);
-            }, 7000);
-
+            }, 10000);
         }
+        return () => clearTimeout(timer);
     }, [showAlert]);
 
     return (
@@ -55,8 +58,9 @@ function MyRSS() {
                 <div className="row m-3">
                     <div className="col-12">
                         <div className="alert alert-danger shadow-sm border-0" role="alert">
-                            <div className="d-flex align-items-center mb-2">
+                            <div className="d-flex align-items-center justify-content-between mb-2">
                                 <strong>{t('Some resources could not be loaded')}</strong>
+                                <button type="button" className="btn btn-close" data-dismiss="modal" aria-label="Close" onClick={handleCloseModal}></button>
                             </div>
                             <hr className="border-danger border-opacity-75 m-0" />
                             <ul className="list-unstyled mb-0">
