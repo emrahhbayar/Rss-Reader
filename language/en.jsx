@@ -13,6 +13,8 @@ export default {
         "No": "No",
         "Are you sure you want to delete?": "Are you sure you want to delete?",
         "Deletion Confirmation": "Deletion Confirmation",
-        "No Rss added yet": "No Rss added yet"
+        "No Rss added yet": "No Rss added yet",
+        "Some resources could not be loaded": "Some resources could not be loaded",
+        "Error": "Error"
     }
 }

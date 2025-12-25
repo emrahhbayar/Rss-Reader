@@ -13,6 +13,8 @@ export default {
         "No": "Hayır",
         "Are you sure you want to delete?": "Silmek istediğinizden emin misiniz?",
         "Deletion Confirmation": "Silme Onayı",
-        "No Rss added yet": "Henüz eklenmiş Rss yok"
+        "No Rss added yet": "Henüz eklenmiş Rss yok",
+        "Some resources could not be loaded": "Bazı kaynaklar yüklenemedi",
+        "Error": "Hata"
     }
 }
